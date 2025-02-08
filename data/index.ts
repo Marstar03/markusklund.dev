@@ -106,11 +106,22 @@ export const navItems = [
     },
   ];
   
+  export const currentPositions = [
+    {
+      id: 1,
+      title: "DevOps Team Lead - Orbit NTNU",
+      desc: "Automating processes and administrating servers.",
+      className: "md:col-span-2",
+      thumbnail: "/orbitntnu.png",
+    },
+  ];
+
   export const workExperience = [
     {
       id: 1,
       title: "Software Developer Intern - Norsk Helsenett",
       desc: "Created a web application using .NET framework with Blazor.",
+      year: "2024",
       className: "md:col-span-2",
       thumbnail: "/nhn.png",
     },
@@ -118,6 +129,15 @@ export const navItems = [
       id: 2,
       title: "DevOps Engineer - Orbit NTNU",
       desc: "Automating processes and administrating servers.",
+      year: "2023",
+      className: "md:col-span-2",
+      thumbnail: "/orbitntnu.png",
+    },
+    {
+      id: 3,
+      title: "Teaching Assistant - NTNU",
+      desc: "Assisted students with Java programming & approved assignments.",
+      year: "2024",
       className: "md:col-span-2",
       thumbnail: "/orbitntnu.png",
     },
