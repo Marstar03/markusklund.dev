@@ -114,9 +114,16 @@ export const navItems = [
       className: "md:col-span-2",
       thumbnail: "/orbitntnu.png",
     },
+    {
+      id: 2,
+      title: "Teaching Assistant in Operating Systems - NTNU",
+      desc: "Assisting students with C programming in the XV6 operating system.",
+      className: "md:col-span-2",
+      thumbnail: "/Logo-Ntnu.png",
+    },
   ];
 
-  export const workExperience = [
+  export const lifeEvents = [
     {
       id: 1,
       title: "Software Developer Intern - Norsk Helsenett",
@@ -127,7 +134,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "DevOps Engineer - Orbit NTNU",
+      title: "Started position as DevOps Engineer - Orbit NTNU",
       desc: "Automating processes and administrating servers.",
       year: "2023",
       className: "md:col-span-2",
@@ -135,11 +142,59 @@ export const navItems = [
     },
     {
       id: 3,
-      title: "Teaching Assistant - NTNU",
+      title: "Teaching Assistant in Object-Oriented programming - NTNU",
       desc: "Assisted students with Java programming & approved assignments.",
       year: "2024",
       className: "md:col-span-2",
+      thumbnail: "/Logo-Ntnu.png",
+    },
+    {
+      id: 5,
+      title: "Started position as DevOps Team Lead - Orbit NTNU",
+      desc: "Automating processes and administrating servers.",
+      year: "2025",
+      className: "md:col-span-2",
       thumbnail: "/orbitntnu.png",
+    },
+    {
+      id: 6,
+      title: "Teaching Assistant in Operating Systems - NTNU",
+      desc: "Assisting students with C programming in the XV6 operating system.",
+      year: "2025",
+      className: "md:col-span-2",
+      thumbnail: "/Logo-Ntnu.png",
+    },
+    {
+      id: 7,
+      title: "Software Developer and recruitment responsible - Abakus Veldedige Forening",
+      desc: "Working to spread knowledge about effective altruism.",
+      year: "2023",
+      className: "md:col-span-2",
+      thumbnail: "/Logo-Ntnu.png",
+    },
+    {
+      id: 8,
+      title: "Homecare Substitute - Ringerike municipality",
+      desc: "Responsible for delivering food and medications, as well as washing and care of the elderly.",
+      year: "2023",
+      className: "md:col-span-2",
+      thumbnail: "/Logo-Ntnu.png",
+    },
+    {
+      id: 9,
+      title: "Deputy Leader - Tyrifjord High School dorm",
+      desc: "Working to improve the well-being of the students.",
+      year: "2021",
+      className: "md:col-span-2",
+      thumbnail: "/Logo-Ntnu.png",
+    },
+    {
+      id: 4,
+      title: "Started studying an integrated masters in Computer Science - NTNU",
+      desc: "Specialization within computer architecture and high-performance computing.",
+      year: "2022",
+      className: "md:col-span-2",
+      thumbnail: "/Logo-Ntnu.png",
     },
   ];
   

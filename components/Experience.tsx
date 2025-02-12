@@ -1,16 +1,20 @@
 "use client";
 
-import { currentPositions, workExperience } from '@/data'
-import React, { JSX, useState } from 'react'
+import { currentPositions, lifeEvents } from '@/data'
+import React, { JSX } from 'react'
 import { Button } from './ui/MovingBorders'
 import Modal from './ui/Modal'
 import { Timeline } from "@/components/ui/timeline";
 
-const Experience = () => {
-    const [isTimelineOpen, setIsTimelineOpen] = useState(false);
-
+const Experience = ({
+  isModalOpen,
+  setIsModalOpen,
+}: {
+  isModalOpen: boolean;
+  setIsModalOpen: (isOpen: boolean) => void;
+}) => {
     const timelineData = Object.values(
-      workExperience.reduce((acc, experience) => {
+      lifeEvents.reduce((acc, experience) => {
         if (!acc[experience.year]) {
           acc[experience.year] = {
             title: experience.year,
@@ -56,12 +60,12 @@ const Experience = () => {
         </div>
 
         <div className="mt-8 text-center">
-          <button onClick={() => setIsTimelineOpen(true)} className='text-sm md:text-base text-purple hover:underline'>
+          <button onClick={() => setIsModalOpen(true)} className='text-sm md:text-base text-purple hover:underline'>
             Show full timeline
           </button>
         </div>
 
-        <Modal isOpen={isTimelineOpen} onClose={() => setIsTimelineOpen(false)} title="My Work Experience Timeline">
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="My Work Experience Timeline">
           <Timeline data={timelineData} />
         </Modal>
       </div>
