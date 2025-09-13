@@ -54,7 +54,7 @@ export const BentoGridItem = ({
   const [error, setError] = useState<string | null>(null);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('markus.klund@hotmail.com');
+    navigator.clipboard.writeText('markus.klund@gmail.com');
 
     setCopied(true);
     setTimeout(() => {
@@ -63,15 +63,15 @@ export const BentoGridItem = ({
   }
 
   const handleDownload = async () => {
-    const response = await fetch("/CV_Markus_Klund.pdf");
+    const response = await fetch("/Markus_Klund_CV.pdf");
     if (!response.ok) {
       setError("An error occurred while downloading the file. Please try again.");
       return;
     }
 
     const link = document.createElement("a");
-    link.href = "/CV_Markus_Klund.pdf";
-    link.download = "CV_Markus_Klund.pdf";
+    link.href = "/Markus_Klund_CV.pdf";
+    link.download = "Markus_Klund_CV.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
